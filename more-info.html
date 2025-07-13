@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Info - Financial Caring</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+<header>
+  <div class="top-bar">
+    <img src="images/logo.jpg" alt="Financial Caring Logo" class="logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="more-info.html">More Info</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="gallery-section">
+    <h1>Our Gallery</h1>
+    <div class="gallery-grid">
+      <div class="thumb"><img src="images/gallery/img1.jpg" alt="Gallery 1" onclick="openLightbox('1')"></div>
+<div class="thumb"><img src="images/gallery/img2.jpg" alt="Gallery 2" onclick="openLightbox('2')"></div>
+<div class="thumb"><img src="images/gallery/img3.jpg" alt="Gallery 3" onclick="openLightbox('3')"></div>
+<div class="thumb"><img src="images/gallery/img4.jpg" alt="Gallery 4" onclick="openLightbox('4')"></div>
+<div class="thumb"><img src="images/gallery/img5.jpg" alt="Gallery 5" onclick="openLightbox('5')"></div>
+<div class="thumb"><img src="images/gallery/img6.jpg" alt="Gallery 6" onclick="openLightbox('6')"></div>
+<div class="thumb"><img src="images/gallery/img7.jpg" alt="Gallery 7" onclick="openLightbox('7')"></div>
+<div class="thumb"><img src="images/gallery/img8.jpg" alt="Gallery 8" onclick="openLightbox('8')"></div>
+<div class="thumb"><img src="images/gallery/img9.jpg" alt="Gallery 9" onclick="openLightbox('9')"></div>
+    </div>
+  </main>
+  
+<footer>
+  <p>&copy; 2025 Financial Caring. All rights reserved.</p>
+</footer>
+
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Full Image">
+  </div>
+
+  <script>
+    function openLightbox(id) {
+      document.getElementById('lightbox-img').src = 'images/gallery/img' + id + '.jpg';
+      document.getElementById('lightbox').style.display = 'block';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+	
+	 window.addEventListener('load', function() {
+        document.getElementById('lightbox').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
